@@ -51,7 +51,7 @@ Contributions to improve the project are welcome. Please follow these steps:
 
 ## Contact
 
-Anchal Gera - [your-email@example.com](mailto:your-email@example.com)
+Anchal Gera - [your-email@example.com](mailto:anchalgupta.chp@gmail.com)
 
 Project Link: [https://github.com/your-username/callgrind-viewer](https://github.com/anchalgera/Callgrind-text-editor)
 
