@@ -29,6 +29,8 @@ This project is a specialized text editor developed in Qt that provides syntax h
 - Highlighting colors can be customized by modifying the `applyHighlighting` function in the source code
 
 ## Technical Details
+### Overview
+![callgrindsyntaxhighlight](callgrindsyntaxhighlight.png)
 
 ### Key Functions
 
