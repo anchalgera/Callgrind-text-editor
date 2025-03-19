@@ -1,0 +1,104 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="qrichtext" content="1">
+    <title>Text Editor Example for Callgrind File</title>
+    <style type="text/css">
+        body, p, li {
+            font-family: Arial, sans-serif;
+            font-size: 12pt;
+            color: #333333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        h2, h3 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        ul {
+            line-height: 1.6;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            display: block;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .highlight span.comment {
+            color: #777777;
+        }
+        .highlight span.keyword {
+            color: #9B30FF;
+        }
+        .highlight span.file-spec {
+            color: #008000;
+        }
+        .highlight span.function-spec {
+            color: #0000FF;
+        }
+        .highlight span.number {
+            color: #FF0000;
+        }
+        .highlight span.cost {
+            color: #FF8C00;
+        }
+    </style>
+</head>
+<body>
+    <h2>Project by Anchal Gera developed in QT</h2>
+    <p align="center">
+        This example demonstrates a modern rich text editor for callgrind files.
+    </p>
+    <h3>What is a callgrind file?</h3>
+    <p>
+        A callgrind file is a profile data output from the Callgrind tool, which is part of the Valgrind instrumentation framework. It contains detailed information about a program's execution, including function calls, instruction counts, and cache behavior.
+    </p>
+    <h3>Types of information in callgrind files:</h3>
+    <ul>
+        <li>Function calls and their relationships (call graph)</li>
+        <li>Instruction counts</li>
+        <li>Cache misses (L1 and L2)</li>
+        <li>Branch prediction data</li>
+        <li>Source code line numbers</li>
+        <li>Object file information</li>
+    </ul>
+    <h3>How we are highlighting callgrind files:</h3>
+    <p>
+        Our text editor uses syntax highlighting to make callgrind files more readable. The highlighting includes:
+    </p>
+    <ul>
+        <li>Comments (lines starting with #) in gray</li>
+        <li>Header keywords (e.g., "version:", "events:") in purple</li>
+        <li>File specifications (fl=) in green</li>
+        <li>Function specifications (fn=) in blue</li>
+        <li>Numbers (including line numbers and event counts) in red</li>
+        <li>Cost lines (line number + event counts) with special formatting</li>
+    </ul>
+
+    <h3>Callgrind Example with Highlighting:</h3>
+    <pre class="highlight">
+        <span class="comment"># This is a comment line in callgrind file</span>
+        <span class="keyword">version:</span> <span class="number">1.0</span>
+        <span class="keyword">events:</span> <span class="file-spec">fl=main.cpp</span>
+        <span class="function-spec">fn=foo</span>
+        <span class="number">100</span> <span class="cost">300</span>
+        <span class="function-spec">fn=bar</span>
+        <span class="number">150</span> <span class="cost">400</span>
+    </pre>
+    <p align="center">
+        Best of Luck!
+    </p>
+</body>
+</html>
